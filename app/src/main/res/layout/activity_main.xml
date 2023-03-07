@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:text="Waga:"
+    android:textSize="35dp"
+    android:layout_marginTop="20dp"
+    android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ems="6"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Wzrost:"
+        android:textSize="35dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ems="6"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/oblicz_button"
+        android:layout_width="197dp"
+        android:layout_height="59dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:onClick="obliczBMI"
+        android:text="Oblicz swoje BMI:"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Wynik:"
+        android:textColor="@color/black"
+        android:textSize="35dp" />
+
+
+</LinearLayout>
